@@ -1,4 +1,5 @@
 import time
+from userSettings import LENGTH
 from videoModule import VideoModule as video
 from audioModule import AudioModule as audio
 from videoModule import saveFilmToDisk
@@ -29,8 +30,8 @@ aCapture = audio(videoTitle)
 
 threads = []
 
-threads.append(Thread(target=aCapture.recordAudio, args=(30,)))
-threads.append(Thread(target=vCapture.recordVideo, args=(30,)))
+threads.append(Thread(target=aCapture.recordAudio, args=(LENGTH,)))
+threads.append(Thread(target=vCapture.recordVideo, args=(LENGTH,)))
 #threads.append(Thread(target=clickKill, args=(vCapture, [vCapture, aCapture],)))
 threads.append(Thread(target=keypressKill, args=([vCapture, aCapture],)))
 
