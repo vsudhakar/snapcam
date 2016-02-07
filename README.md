@@ -10,10 +10,16 @@
 ### How it works
 
 There's nothing super awesome here, just navigate to the directory and run
+
+```
 	python capture.py
+```
 
 Pressing any key will end the video and audio, then merge the files. The default maximum runtime is 30 seconds, this can be adjusted in the file
+
+```
 	userSettings.py
+```
 
 Real simple stuff.
 
