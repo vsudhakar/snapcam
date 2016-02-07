@@ -1,1 +1,0 @@
- ffmpeg -i .\output_vid.avi -i .\output.wav -c:v copy -c:a copy mixed.avi
